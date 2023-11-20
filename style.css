@@ -14,8 +14,107 @@ html {
   box-sizing: inherit;
 }
 
-.body {
+h1,h2,h3,h4,p {
   margin: 0 0;
-  padding: 0 0;
 }
 
+body {
+  margin: 0 0;
+  padding: 4.4375rem 1.5rem;
+  background-color: hsl(210, 46%, 95%);
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.testimonial-card {
+  display: flex;
+  flex-direction: column;
+  padding: 25px 31px 2rem 31px ;
+  margin-bottom: 24px;
+  border-radius: 0.5rem;
+}
+
+.testimonial-card > h2 {
+  margin-bottom: 25px;
+}
+
+.profile {
+  display: flex;
+  width: 100%;
+  height: 1.875rem;
+  margin-bottom: 1.375rem;
+}
+
+.profile-img {
+  width: 1.875rem;
+  height: 1.875rem;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.profile-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 30px;
+}
+
+.profile-name {
+  font-size: 12px;
+}
+
+.profile-title > p {
+  font-size: 11px;
+  opacity: 0.5;
+}
+
+.quote-pattern {
+  height: 120px;
+  position: relative;
+  top: -25px;
+  right: -24px;
+}
+
+.above-pattern {
+  z-index: 2;
+}
+
+/* --- Colors --- */
+
+.text-white {
+  color: hsl(0, 0%, 100%);
+}
+
+.text-grey {
+  color: hsl(217, 19%, 35%);
+}
+
+.text-white-opacity {
+  color: hsla(0, 0%, 100%, 0.7);
+}
+
+.text-grey-opacity {
+  color: hsla(217, 19%, 35%, 0.7);
+}
+
+.white-bg {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.moderate-violet {
+ background-color: hsl(263, 55%, 52%);
+}
+
+.dark-grayish-blue {
+  background-color:  hsl(219, 32%, 42%);
+}
+
+.dark-blackish-blue {
+  background-color: hsl(217, 47%, 18%);
+}
