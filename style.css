@@ -85,6 +85,22 @@ body {
   z-index: 2;
 }
 
+/* --- Desktop Media Query --- */
+@media only screen and (min-width: 768px) {
+
+  .content-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .testimonial-card {
+    margin: 24px 30px;
+  }
+
+}
+
 /* --- Colors --- */
 
 .text-white {
