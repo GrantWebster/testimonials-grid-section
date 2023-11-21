@@ -15,7 +15,17 @@ html {
 }
 
 h1,h2,h3,h4,p {
+  font-family: 'Barlow Semi Condensed', sans-serif;
   margin: 0 0;
+}
+
+h2 {
+  font-size: 19px;
+}
+
+p {
+  font-size: 12px;
+  line-height: 1.7;
 }
 
 body {
@@ -25,10 +35,9 @@ body {
 }
 
 .content-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-gap: 24px;
   font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
@@ -36,7 +45,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 25px 31px 2rem 31px ;
-  margin-bottom: 24px;
+  /* margin-bottom: 24px; */
   border-radius: 0.5rem;
 }
 
@@ -75,10 +84,11 @@ body {
 }
 
 .quote-pattern {
-  height: 120px;
+  height: 100px;
+  width: auto;
   position: relative;
   top: -25px;
-  right: -24px;
+  right: -40px;
 }
 
 .above-pattern {
@@ -89,14 +99,45 @@ body {
 @media only screen and (min-width: 768px) {
 
   .content-container {
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, 15.9375rem);
+    grid-template-rows: 266px 266px;
+    grid-gap: 1.5rem 1.875rem;
+    padding: 164px 165px;
   }
 
-  .testimonial-card {
-    margin: 24px 30px;
+  .quote-pattern {
+    height: 100px;
+    position: relative;
+    top: -25px;
+    right: -204px;
+  }
+
+  h2 {
+    font-size: 19px;
+  }
+  
+  p {
+    font-size: 13px;
+  }
+
+  .card1 {
+    grid-column: 1 / span 2;
+  }
+
+  .card3 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .card4 {
+    grid-column: span 2;
+    grid-row: 2;
+  }
+
+  .card5 {
+    grid-column: 4;
+    grid-row: 1 / span 2;
   }
 
 }
@@ -112,7 +153,7 @@ body {
 }
 
 .text-white-opacity {
-  color: hsla(0, 0%, 100%, 0.7);
+  color: hsla(0, 0%, 100%, 0.5);
 }
 
 .text-grey-opacity {
@@ -128,9 +169,9 @@ body {
 }
 
 .dark-grayish-blue {
-  background-color:  hsl(219, 32%, 42%);
+  background-color: hsl(217, 19%, 35%);
 }
 
 .dark-blackish-blue {
-  background-color: hsl(217, 47%, 18%);
+  background-color: hsl(219, 29%, 14%);
 }
