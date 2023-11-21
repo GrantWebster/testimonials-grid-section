@@ -25,7 +25,6 @@ h2 {
 
 p {
   font-size: 12px;
-  line-height: 1.7;
 }
 
 body {
@@ -99,11 +98,14 @@ body {
 @media only screen and (min-width: 768px) {
 
   .content-container {
+    margin: auto auto;
+    width: min-content;
     display: grid;
     grid-template-columns: repeat(4, 15.9375rem);
     grid-template-rows: 266px 266px;
     grid-gap: 1.5rem 1.875rem;
     padding: 164px 165px;
+
   }
 
   .quote-pattern {
